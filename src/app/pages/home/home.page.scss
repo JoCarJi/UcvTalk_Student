@@ -1,0 +1,39 @@
+
+ion-content {
+  --background: none; /* Remueve cualquier fondo por defecto de ion-content */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%; /* Ajusta al tamaño completo del contenido */
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: fixed; /* Make the buttons stay in place */
+    z-index: 1;
+    margin-top: 30vh; /* Ajusta la distancia desde la parte superior */
+    left: 25%; /* Ajusta esta propiedad para mover los botones a la derecha */
+  }
+  
+  .button-container ion-button {
+    margin: 20px;
+    width: 120%;
+  }
+  
+.button-container ion-button.button-solid {
+--background: rgba(52, 48, 165, 0) !important; /* Sobrescribe el color de fondo a rojo */
+--color: white !important; /* Sobrescribe el color del texto a blanco */
+}
+
+.button-container ion-button.button-solid:hover {
+--background: rgba(47, 44, 57, 0.571) !important; /* Cambia el color de fondo al pasar el mouse */
+}
